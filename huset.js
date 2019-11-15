@@ -36,7 +36,7 @@ function getData() {
     console.log("main")
 
     /* console.log("getData") */
-    fetch("http://timidesign.org/kea/wordpress-excersize/wordpress/wordpress/wp-json/wp/v2/event?_embed&per_page=100")
+    fetch("https://timidesign.org/kea/wordpress-excersize/wordpress/wordpress/wp-json/wp/v2/event?_embed&per_page=100")
         .then(res => res.json())
         .then(handleData)
 }
@@ -46,7 +46,7 @@ function getSearch() {
     const search = urlParams.get("search");
     /* console.log("getData") */
     console.log(search)
-    fetch("http://timidesign.org/kea/wordpress-excersize/wordpress/wordpress/wp-json/wp/v2/event?_embed&per_page=100&search=" + search)
+    fetch("https://timidesign.org/kea/wordpress-excersize/wordpress/wordpress/wp-json/wp/v2/event?_embed&per_page=100&search=" + search)
         .then(res => res.json())
         .then(handleData)
 }
