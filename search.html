@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="img/logowhite1.png" alt="logo" id="logo">
+    </header>
+    <main>
+
+        <form id="searchField">
+            <input name="search" type="search" id="searchBox" placeholder="Find events, movies, geanres and more">
+            <!--  <input type="submit" class="searchButton"> -->
+            <!--  <input type="submit" value=search> -->
+        </form>
+
+        <div class="navbar">
+            <ul>
+
+                <a href="">
+                    <li>
+                        <img src="img/heartwhite.png" class="showLiked" />
+                    </li>
+                </a>
+                <a href="index.html">
+                    <li>
+                        <img src="img/home.png" />
+                    </li>
+                </a>
+
+                <a href="profile.html">
+                    <li>
+                        <img src="img/profile.png" />
+                    </li>
+                </a>
+
+
+            </ul>
+
+        </div>
+
+        <section class="events"></section>
+
+        <template class="eventTemplate">
+            <section class="eventCards active">
+
+                <h1 class="eventTitle">TITLE</h1>
+                <img src="" alt="" class="poster">
+                <h2>
+                    <p class="eventDate">EVENTDATE</p>
+                    <p class="eventTime">EVENTTIME</p>
+                </h2>
+                <br>
+                <div class="doorsopen"> Price: <p class="eventPrice">EVENTPRICE</p>DKK</div>
+                <div class="doorsopen"> Doors open at:<p class="eventDoor">DOORS OPENING</p>
+                </div>
+                <br>
+                <p class="eventExcerpt">EXCERPT</p>
+                <section class="hiddenContent hide">
+                    <br>
+                    <p class="eventDescription">DESCRIPTION</p>
+                    <a href="" class="eventTrailer"></a>
+                </section>
+
+                <br>
+                <img src="img/heart.png" alt="heart" class="heart">
+
+                <section class="buttons">
+                    <button class="readmoreButton">READ MORE</button>
+
+                    <button onclick="window.location.href= 'https://billetto.dk/';" target="_blank">BUY TICKET</button>
+                </section>
+
+
+
+            </section>
+
+        </template>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<script src="huset.js"></script>
