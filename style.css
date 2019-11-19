@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Avenir Next", sans-serif;
-  src: "HusetsFont/AvenirNext.ttc"
+    font-family: "Avenir Next", sans-serif;
+    src: "HusetsFont/AvenirNext.ttc"
 }
 
 
@@ -26,6 +26,107 @@ img {
     height: auto;
 }
 
+/*preloader*/
+.sk-chase {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: sk-chase-dot 2.0s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+    animation-delay: -1.1s;
+}
+
+.sk-chase-dot:nth-child(2) {
+    animation-delay: -1.0s;
+}
+
+.sk-chase-dot:nth-child(3) {
+    animation-delay: -0.9s;
+}
+
+.sk-chase-dot:nth-child(4) {
+    animation-delay: -0.8s;
+}
+
+.sk-chase-dot:nth-child(5) {
+    animation-delay: -0.7s;
+}
+
+.sk-chase-dot:nth-child(6) {
+    animation-delay: -0.6s;
+}
+
+.sk-chase-dot:nth-child(1):before {
+    animation-delay: -1.1s;
+}
+
+.sk-chase-dot:nth-child(2):before {
+    animation-delay: -1.0s;
+}
+
+.sk-chase-dot:nth-child(3):before {
+    animation-delay: -0.9s;
+}
+
+.sk-chase-dot:nth-child(4):before {
+    animation-delay: -0.8s;
+}
+
+.sk-chase-dot:nth-child(5):before {
+    animation-delay: -0.7s;
+}
+
+.sk-chase-dot:nth-child(6):before {
+    animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot {
+
+    80%,
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot-before {
+    50% {
+        transform: scale(0.4);
+    }
+
+    100%,
+    0% {
+        transform: scale(1.0);
+    }
+}
 
 @media only screen and (min-width:350px) {
 
@@ -49,9 +150,11 @@ img {
         margin: 1em;
         padding: 1em;
     }
+
     .active {
         display: block;
     }
+
     .hide {
         display: none;
     }
@@ -60,12 +163,15 @@ img {
     .events {
         margin-bottom: 4em;
     }
+
     .doorsopen {
         display: flex;
     }
+
     .eventDoor {
         margin-left: 5px;
     }
+
     .eventPrice {
         margin-left: 5px;
     }
@@ -131,10 +237,12 @@ img {
         color: black;
         text-transform: uppercase;
     }
+
     .poster {
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
     .buttons {
         display: flex;
     }
@@ -222,11 +330,12 @@ img {
     }
 
     #login {
-       display: block;
+        display: block;
         margin-top: 3em;
     }
 
-    #username, #pw {
+    #username,
+    #pw {
         width: 300px;
         height: 40px;
         margin-top: 2em;
@@ -249,32 +358,37 @@ img {
         width: 60%;
     }
 
-    input#username,#pw {
+    input#username,
+    #pw {
         padding-left: 10px;
     }
 
 
     /*edit profile*/
     .editprofile {
-         background-color: white;
+        background-color: white;
         height: 100vh;
 
     }
+
     .editchange {
         margin-left: 10px;
         color: black;
-        font-weight:500;
+        font-weight: 500;
     }
+
     .editchange h2 {
         opacity: 0.3;
-         margin-top: 1em;
+        margin-top: 1em;
     }
+
     .editchange p {
         font-size: 20px;
         text-decoration: underline;
         text-decoration-color: lightgray;
         text-decoration-style: dashed;
     }
+
     .editProfile {
         vertical-align: top;
         display: inline-block;
@@ -287,6 +401,7 @@ img {
         width: 50%;
         margin-top: 2em;
     }
+
     /*payment details*/
 
     .card {
@@ -303,7 +418,7 @@ img {
 
     /*settings*/
     .settings {
-          background-color: white;
+        background-color: white;
         height: 100vh;
         padding-top: 1em;
     }
@@ -313,7 +428,7 @@ img {
         height: 30px;
     }
 
-     .switch {
+    .switch {
         position: relative;
         display: inline-block;
         width: 65px;
@@ -418,6 +533,3 @@ img {
         transition: opacity 50ms ease-in-out 200ms;
     }
     */
-
-
-

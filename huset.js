@@ -18,8 +18,11 @@ function test(){
 }
 */
 
+const spinner= document.querySelector(".sk-chase")
+
 function init() {
 
+    spinner.removeAttribute('hidden');
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
     if (search) {
@@ -34,11 +37,11 @@ function init() {
 
 function getData() {
     console.log("main")
-
     /* console.log("getData") */
     fetch("https://timidesign.org/kea/wordpress-excersize/wordpress/wordpress/wp-json/wp/v2/event?_embed&per_page=100")
         .then(res => res.json())
         .then(handleData)
+
 }
 
 function getSearch() {
@@ -52,6 +55,7 @@ function getSearch() {
 }
 
 function handleData(myData) {
+     spinner.setAttribute('hidden','');
     console.log(myData)
         myData.sort(compare)
     myData.forEach(showPost)
