@@ -3,8 +3,6 @@
     src: "HusetsFont/AvenirNext.ttc"
 }
 
-
-
 * {
     margin: 0;
     font-family: "Avenir Next", sans-serif;
@@ -533,3 +531,381 @@ img {
         transition: opacity 50ms ease-in-out 200ms;
     }
     */
+
+    @media only screen and (min-width:900px) {
+
+        /* index page */
+
+        #logo {
+            width: 30%;
+            height: 30%;
+            margin: 1em;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .eventCards {
+            background-color: white;
+            padding: 1em;
+            width: 100%;
+            margin-left: 5%;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+        .events {
+            margin-bottom: 4em;
+            width: 90%;
+        }
+
+        .doorsopen {
+            display: flex;
+        }
+
+        .eventDoor {
+            margin-left: 5px;
+        }
+
+        .eventPrice {
+            margin-left: 5px;
+        }
+
+        /* Place the navbar at the bottom of the page, and make it stick */
+        .navbar {
+            background-color: #000000;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 2em;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navbar ul a li {
+            text-decoration: none;
+            text-align: center;
+            display: inline;
+            list-style: none;
+            height: 100%;
+            width: 15%;
+            margin: 0 auto;
+        }
+
+        .navbar ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        .navbar ul a li img {
+            max-height: 3em;
+            margin: 10%;
+            opacity: 1;
+
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .heart {
+            width: 50px;
+            ;
+            margin-left: 90%;
+        }
+
+        button {
+            width: 30%;
+            margin-top: 1em;
+            border-style: none;
+            height: 50px;
+            ;
+            margin: 10px;
+            background-color: white;
+            border: solid 2px black;
+            box-shadow: 5px 5px black;
+            color: black;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .poster {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /*searchBox*/
+
+        #searchField {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #searchBox {
+            border-style: none;
+            border-radius: 20px;
+            height: 55px;
+            width: 90%;
+            margin: 1em;
+            font-size: 20px;
+        }
+
+        input#searchBox {
+            padding-left: 15px;
+        }
+
+        /*profile*/
+
+        .avatar {
+            width: 30%;
+            border-radius: 100%;
+        }
+
+
+        .profile {
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+            padding-top: 10px;
+            background-color: white;
+            width: 100vw;
+
+        }
+
+        .name {
+            display: block;
+            color: black;
+            margin-top: 10px;
+        }
+
+
+        main.profile {
+            background-color: white;
+            height: 100vh;
+        }
+
+        .options img {
+            width: 30%;
+            margin: 2em;
+
+        }
+
+        .options {
+            width: 100%;
+        }
+
+        .icons {
+            float: left;
+            width: 33.3%;
+            text-align: center;
+            margin-top: 3em;
+        }
+
+        .profile h2 {
+            font-size: 45px;
+            font-family: "AvenirNext";
+        }
+
+        .icons p {
+            font-size: 30px;
+        }
+
+        /*login page*/
+
+        .loginPage {
+            vertical-align: top;
+            display: block;
+            text-align: center;
+            margin-top: 40%;
+        }
+
+        #login {
+            display: block;
+            margin-top: 3em;
+        }
+
+        #username,
+        #pw {
+            width: 500px;
+            height: 60px;
+            border-style: none;
+            display: block;
+            margin: 0 auto;
+            margin-top: 2em;
+            font-size: 25px;
+
+
+        }
+
+        #loginButton {
+            width: 400px;
+            margin-top: 3em;
+            height: 60px;
+            border-style: none;
+            background-color: black;
+            border: solid 2px white;
+            box-shadow: 5px 5px white;
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .loginPage img {
+            width: 60%;
+        }
+
+        input#username,
+        #pw {
+            padding-left: 10px;
+        }
+
+
+        /*edit profile*/
+        .editprofile {
+            background-color: white;
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .editchange {
+            margin-left: 30px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .editchange h2 {
+            opacity: 0.3;
+            margin-top: 1em;
+        }
+
+        .editchange p {
+            font-size: 40px;
+            text-decoration: underline;
+            text-decoration-color: lightgray;
+            text-decoration-style: dashed;
+        }
+
+        .editProfile {
+            vertical-align: top;
+            display:block;
+            text-align: center;
+            padding-top: 15px;
+            background-color: white;
+        }
+
+
+        .save {
+            width: 50%;
+            height: 60px;
+            margin-top: 2em;
+        }
+
+        /*payment details*/
+
+        .card {
+            background-color: white;
+            height: 100vh;
+            padding-top: 1em;
+        }
+
+        .settingsContent {
+            margin-left: 10px;
+            font-weight: 500;
+            margin-top: 1em;
+        }
+
+        /*settings*/
+        .settings {
+            background-color: white;
+            height: 100vh;
+            padding-top: 1em;
+        }
+
+        .language {
+            width: 50%;
+            height: 50px;
+            font-size: 30px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 75px;
+            height: 40px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #EDEDED;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 35px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 35px;
+            width: 35px;
+            left: 4px;
+            bottom: 3px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+
+        input:checked + .slider {
+            background-color: black;
+        }
+
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(5px);
+            -ms-transform: translateX(35px);
+            transform: translateX(35px);
+        }
+
+
+        /*calendar*/
+        .calendar {
+            background-color: white;
+            height: 100vh;
+            padding-top: 1em;
+        }
