@@ -173,6 +173,7 @@ img {
     .eventPrice {
         margin-left: 5px;
     }
+
     #desktopmenu {
         display: none;
     }
@@ -307,6 +308,12 @@ img {
     .options {
         width: 100%;
     }
+
+    .icons a {
+        text-decoration: none;
+        color: black;
+    }
+
 
     .icons {
         float: left;
@@ -736,6 +743,12 @@ img {
             font-size: 30px;
         }
 
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+
         /*login page*/
 
         .loginPage {
@@ -1114,6 +1127,7 @@ img {
                 text-align: center;
                 margin-top: 3em;
             }
+
             .icons a {
                 text-decoration: none;
                 color: black;
